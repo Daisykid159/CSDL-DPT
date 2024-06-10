@@ -7,7 +7,7 @@ from FrequencyMagnitude import funcFrequencyMagnitude
 import os
 # get subpath
 listsubpath = []
-for x in os.walk("D:/fullstrack/CSDLDPT/tool_instrument_voice_recognition/src/File âm thanh"):
+for x in os.walk("D:/fullstrack/CSDLDPT/CSDL_DPT/src/File âm thanh"):
     listsubpath.append(x[0].replace("\\", "/"))
 
 listsubpath.pop(0)
@@ -25,7 +25,7 @@ for subpath in listsubpath:
 # write to csv
 import csv
 
-with open('D:/fullstrack/CSDLDPT/tool_instrument_voice_recognition/src/CSDLDPT.csv', 'w', encoding='UTF8') as f:
+with open('D:/fullstrack/CSDLDPT/CSDL_DPT/src/CSDLDPT.csv', 'w', encoding='UTF8') as f:
     writer = csv.writer(f)
     header = ['Path', 'Pitch', 'RMSE', 'PercentSilence', 'FrequencyMagnitude']
     writer.writerow(header)

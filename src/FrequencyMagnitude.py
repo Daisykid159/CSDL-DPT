@@ -13,8 +13,7 @@ import numpy as np
 
 def funcFrequencyMagnitude(audio_dir):
 
-    #Load file âm thanh vào librosa
-    audio, sr = librosa.load(audio_dir, duration = 7)
+    audio, sr = librosa.load(audio_dir, duration = 15)
 
     #Mảng X là mảng chứa dãy tần số và mật độ của nó (Mặc định thì độ lớn của mật độ là số ảo ) (Số thực = mật độ / Số ảo = giá trị pha (Ko cần))
     X = np.fft.fft(audio)
