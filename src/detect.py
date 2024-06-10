@@ -64,7 +64,7 @@ for i in range(15):
 ####################################### get data csv #######################
 import csv
 
-with open('D:/fullstrack/CSDLDPT/tool_instrument_voice_recognition/src/CSDLDPT.csv', 'r', encoding='UTF8') as f:
+with open('D:/fullstrack/CSDLDPT/CSDL_DPT/src/CSDLDPT.csv', 'r', encoding='UTF8') as f:
     reader = csv.reader(f)
     l = [row for row in reader]
     metadata = []
