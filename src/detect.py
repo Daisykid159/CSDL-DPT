@@ -18,8 +18,8 @@ configFrequencyMagnitude = 0.3
 
 def compareFile(att1, att2): 
     maxRes = 1
-    for i in range(7):
-        for j in range(7):
+    for i in range(15):
+        for j in range(15):
             # giongnhau
             same = float(abs(att1[i].percentSilence - att2[j].percentSilence) / max(att1[i].percentSilence, att2[j].percentSilence) * configPercentSilence)
             same = same + float(abs(att1[i].RMSE - att2[j].RMSE) / max(att1[i].RMSE, att2[j].RMSE) * configRMSE)
